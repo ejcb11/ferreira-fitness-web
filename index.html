@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferreira Fitness GYM | Gimnasio en San Juan de Colón – Fuerza, Pérdida de Peso y Comunidad</title>
+  <meta name="description" content="Ferreira Fitness GYM, el gimnasio de San Juan de Colón. Entrenamiento personalizado, horarios flexibles, entrenadores expertos, plan de nutrición y seguimiento semanal. ¡Reserva tu valoración GRATIS!" />
+  <meta name="keywords" content="gimnasio San Juan de Colón, gym Colón Táchira, entrenador personal, perder peso, ganar fuerza, Ferreira Fitness" />
+  <meta name="theme-color" content="#0b0b0d" />
+  <link rel="canonical" href="https://ferreirafitness.com/" />
+
+  <!-- Open Graph / Instagram & WhatsApp previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ferreira Fitness GYM | Tu mejor versión empieza hoy" />
+  <meta property="og:description" content="Entrenamiento personalizado, nutrición y comunidad en San Juan de Colón. Primera valoración GRATIS." />
+  <meta property="og:image" content="assets/img/hero_gym.jpg" />
+  <meta property="og:locale" content="es_VE" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Datos estructurados para SEO local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "Ferreira Fitness GYM",
+    "image": "assets/img/hero_gym.jpg",
+    "description": "Gimnasio en San Juan de Colón con entrenamiento personalizado, nutrición y seguimiento de progreso.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Juan de Colón",
+      "addressRegion": "Táchira",
+      "addressCountry": "VE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "05:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "13:00" }
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div id="preloader" class="preloader">
+    <div class="preloader__content">
+      <div class="preloader__icon">
+        <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6.5 6.5v11"></path>
+          <path d="M17.5 6.5v11"></path>
+          <path d="M3 9v6"></path>
+          <path d="M21 9v6"></path>
+          <path d="M6.5 12h11"></path>
+        </svg>
+      </div>
+      <div class="preloader__bar">
+        <div class="preloader__progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="Ferreira Fitness GYM - Inicio">
+        <img src="assets/img/logo.jpg" alt="Ferreira Fitness GYM" style="height: 44px; border-radius: 50%;" />
+        <span class="logo__text" style="font-size: 1.2rem;">FERREIRA<strong>FITNESS GYM</strong></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#ventajas">Ventajas</a>
+        <a href="#maquinas">Equipos</a>
+        <a href="#nutricion">Nutrición</a>
+        <a href="#progreso">Mi Progreso</a>
+        <a href="#entrenadores">Entrenadores</a>
+        <a href="#suplementos">Suplementos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#reserva" class="btn btn--primary btn--sm nav__cta">Clase GRATIS</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" role="img" aria-label="Zona de máquinas en Ferreira Fitness"></div>
+      <div class="container hero__content">
+        <span class="pill reveal"><svg style="vertical-align: text-bottom; margin-right: 4px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> San Juan de Colón · Táchira</span>
+        <h1 class="hero__title reveal">
+          Construye tu<br />mejor versión<br /><span class="text-gradient">con nosotros.</span>
+        </h1>
+        <p class="hero__lead reveal">
+          Somos más que un gimnasio, somos una familia. Te acompañamos día a día con entrenamiento guiado y consejos de alimentación reales para que logres el cuerpo y la salud que siempre has querido.
+        </p>
+        <div class="hero__ctas reveal">
+          <a href="#reserva" class="btn btn--primary btn--lg">Ven a tu primera clase GRATIS →</a>
+        </div>
+        <ul class="hero__trust reveal">
+          <li><svg style="vertical-align: text-bottom; margin-right: 4px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Entrenadores que sí te ayudan</li>
+          <li><svg style="vertical-align: text-bottom; margin-right: 4px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Ambiente sano y familiar</li>
+          <li><svg style="vertical-align: text-bottom; margin-right: 4px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Sin contratos forzosos</li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <div class="stats">
+          <div class="stat"><span class="stat__num" data-count="650" data-suffix="+">0</span><span class="stat__label">Personas entrenando</span></div>
+          <div class="stat"><span class="stat__num" data-count="12" data-suffix="">0</span><span class="stat__label">Entrenadores a tu lado</span></div>
+          <div class="stat"><span class="stat__num" data-count="4800" data-suffix=" kg">0</span><span class="stat__label">Kilos perdidos en grupo</span></div>
+          <div class="stat"><span class="stat__num" data-count="17" data-suffix=" h">0</span><span class="stat__label">Horas abiertos al día</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VENTAJAS CLAVE ============ -->
+    <section class="section" id="ventajas">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Por qué Ferreira Fitness</span>
+          <h2 class="section__title">No somos solo un gimnasio. <span class="text-gradient">Somos tu equipo.</span></h2>
+          <p class="section__sub">Creemos en el esfuerzo constante, la comunidad y en hacerte sentir como en casa desde el primer día.</p>
+        </header>
+
+        <div class="features">
+          <article class="feature reveal">
+            <div class="feature__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
+            <h3>Entrenamiento que se adapta a ti</h3>
+            <p>Evaluamos cómo te mueves y qué quieres lograr. Tu rutina está pensada especialmente para ti: ya sea ganar fuerza o sentirte más saludable.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+            <h3>Horarios para la vida real</h3>
+            <p>Abrimos de 5:00 am a 10:00 pm en la semana. Ven antes de trabajar, después de clases o cuando tu rutina te lo permita.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></div>
+            <h3>Entrenadores siempre presentes</h3>
+            <p>Nuestros entrenadores no solo miran el celular; corrigen tu técnica, te animan y se aseguran de que entrenes de forma segura.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></div>
+            <h3>Acompañamiento real</h3>
+            <p>Nos importa tu avance. Llevamos un registro de tus entrenamientos y resolvemos tus dudas día a día.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+            <h3>Un ambiente sano y familiar</h3>
+            <p>Todos nos conocemos. Es un espacio sin prejuicios donde celebramos el progreso de cada persona que entra por la puerta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BENEFICIOS ============ -->
+    <section class="section section--alt" id="beneficios">
+      <div class="container split">
+        <div class="split__media reveal">
+          <img src="assets/img/experiencia_nueva.jpg" alt="Comunidad de Ferreira Fitness celebrando después de una clase grupal" loading="lazy" />
+          <div class="badge-float">
+            <strong>+95%</strong>
+            <span>de nuestra gente se queda</span>
+          </div>
+        </div>
+        <div class="split__body reveal">
+          <span class="eyebrow">Tu experiencia aquí</span>
+          <h2 class="section__title">Aquí no vienes <span class="text-gradient">solo a levantar pesas</span></h2>
+          <ul class="checklist">
+            <li><strong>Valoración física inicial</strong> con medidas, peso y % de grasa.</li>
+            <li><strong>Rutina personalizada</strong> actualizada cada 4 semanas.</li>
+            <li><strong>Guía de nutrición</strong> con porciones y menú ejemplo según tu meta.</li>
+            <li><strong>Clases grupales</strong>: funcional, HIIT, glúteos y core.</li>
+            <li><strong>Panel de progreso semanal</strong> (y muy pronto, nuestra App).</li>
+            <li><strong>Retos mensuales</strong> con premios para la comunidad.</li>
+            <li><strong>Descuentos</strong> en suplementos y tiendas aliadas de Colón.</li>
+          </ul>
+          <a href="#reserva" class="btn btn--primary">Quiero estos beneficios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MÁQUINAS ============ -->
+    <section class="section" id="maquinas">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Equipamiento</span>
+          <h2 class="section__title">Máquinas de nivel profesional, <span class="text-gradient">en tu ciudad</span></h2>
+          <p class="section__sub">Cada equipo está pensado para que avances seguro, sin importar tu nivel.</p>
+        </header>
+
+        <div class="machines-hero reveal">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=800&auto=format&fit=crop" alt="Zona de fuerza y cardio de Ferreira Fitness GYM" loading="lazy" />
+        </div>
+
+        <div class="tabs reveal" role="tablist" aria-label="Filtrar equipos">
+          <button class="tab is-active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+          <button class="tab" data-filter="fuerza" role="tab" aria-selected="false">Fuerza</button>
+          <button class="tab" data-filter="cardio" role="tab" aria-selected="false">Cardio</button>
+          <button class="tab" data-filter="funcional" role="tab" aria-selected="false">Funcional</button>
+        </div>
+
+        <div class="machines" id="machines">
+          <article class="machine" data-cat="fuerza">
+            <span class="machine__tag">Fuerza</span>
+            <h3>Rack de potencia</h3>
+            <p>Sentadillas, press de banca y peso muerto con barras de seguridad. La base para ganar fuerza real.</p>
+            <ul class="machine__meta"><li>💪 Piernas · Pecho · Espalda</li><li>Nivel: Todos</li></ul>
+          </article>
+          <article class="machine" data-cat="fuerza">
+            <span class="machine__tag">Fuerza</span>
+            <h3>Prensa de piernas 45°</h3>
+            <p>Trabaja cuádriceps y glúteos con carga alta protegiendo la espalda baja. Ideal para principiantes.</p>
+            <ul class="machine__meta"><li>💪 Cuádriceps · Glúteos</li><li>Nivel: Principiante+</li></ul>
+          </article>
+          <article class="machine" data-cat="fuerza">
+            <span class="machine__tag">Fuerza</span>
+            <h3>Poleas cruzadas (Crossover)</h3>
+            <p>Más de 50 ejercicios con tensión constante: aperturas, remos, tríceps y trabajo de core.</p>
+            <ul class="machine__meta"><li>💪 Tren superior · Core</li><li>Nivel: Todos</li></ul>
+          </article>
+          <article class="machine" data-cat="fuerza">
+            <span class="machine__tag">Fuerza</span>
+            <h3>Máquina Smith</h3>
+            <p>Barra guiada para entrenar pesado con control y seguridad, perfecta si entrenas sin compañero.</p>
+            <ul class="machine__meta"><li>💪 Cuerpo completo</li><li>Nivel: Principiante+</li></ul>
+          </article>
+          <article class="machine" data-cat="fuerza">
+            <span class="machine__tag">Fuerza</span>
+            <h3>Zona de mancuernas 2–50 kg</h3>
+            <p>Rango completo de pesos y bancos ajustables para trabajo unilateral y aislamiento.</p>
+            <ul class="machine__meta"><li>💪 Brazos · Hombros · Todo</li><li>Nivel: Todos</li></ul>
+          </article>
+          <article class="machine" data-cat="cardio">
+            <span class="machine__tag machine__tag--cardio">Cardio</span>
+            <h3>Caminadoras inteligentes</h3>
+            <p>Inclinación hasta 15% y programas de intervalos para quemar grasa sin castigar tus rodillas.</p>
+            <ul class="machine__meta"><li>🔥 Quema calórica</li><li>Nivel: Todos</li></ul>
+          </article>
+          <article class="machine" data-cat="cardio">
+            <span class="machine__tag machine__tag--cardio">Cardio</span>
+            <h3>Bicicletas y elípticas</h3>
+            <p>Cardio de bajo impacto ideal para calentar, recuperar o sumar minutos activos al día.</p>
+            <ul class="machine__meta"><li>🔥 Resistencia · Bajo impacto</li><li>Nivel: Todos</li></ul>
+          </article>
+          <article class="machine" data-cat="funcional">
+            <span class="machine__tag machine__tag--func">Funcional</span>
+            <h3>Zona funcional & HIIT</h3>
+            <p>Cuerdas de batalla, kettlebells, cajones pliométricos, balones medicinales y TRX.</p>
+            <ul class="machine__meta"><li>⚡ Potencia · Agilidad</li><li>Nivel: Intermedio+</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NUTRICIÓN ============ -->
+    <section class="section section--alt" id="nutricion">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Nutrición</span>
+          <h2 class="section__title">El 70% del resultado <span class="text-gradient">se cocina en casa</span></h2>
+          <p class="section__sub">Calcula tu recuento diario de calorías y macros en 30 segundos y aplica nuestras recomendaciones.</p>
+        </header>
+
+        <div class="nutri">
+          <form class="card calc reveal" id="calcForm" novalidate>
+            <h3 class="card__title">🧮 Calculadora de calorías y macros</h3>
+            <div class="grid-2">
+              <label class="field">
+                <span>Sexo</span>
+                <select name="sex" required>
+                  <option value="m">Hombre</option>
+                  <option value="f">Mujer</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Edad</span>
+                <input type="number" name="age" min="15" max="80" value="25" required />
+              </label>
+              <label class="field">
+                <span>Peso (kg)</span>
+                <input type="number" name="weight" min="35" max="250" step="0.1" value="70" required />
+              </label>
+              <label class="field">
+                <span>Estatura (cm)</span>
+                <input type="number" name="height" min="130" max="220" value="170" required />
+              </label>
+              <label class="field">
+                <span>Actividad</span>
+                <select name="activity">
+                  <option value="1.2">Sedentario</option>
+                  <option value="1.375">Ligera (1–3 días)</option>
+                  <option value="1.55" selected>Moderada (3–5 días)</option>
+                  <option value="1.725">Alta (6–7 días)</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Objetivo</span>
+                <select name="goal">
+                  <option value="loss">Perder grasa</option>
+                  <option value="maintain">Mantener / hábitos</option>
+                  <option value="gain">Ganar fuerza y músculo</option>
+                </select>
+              </label>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Calcular mi plan</button>
+
+            <div class="calc__result" id="calcResult" hidden>
+              <div class="kcal">
+                <span class="kcal__num" id="kcalNum">0</span>
+                <span class="kcal__label">kcal / día</span>
+              </div>
+              <div class="macros">
+                <div class="macro"><span class="macro__dot macro__dot--p"></span><strong id="mProt">0 g</strong><small>Proteína</small></div>
+                <div class="macro"><span class="macro__dot macro__dot--c"></span><strong id="mCarb">0 g</strong><small>Carbohidratos</small></div>
+                <div class="macro"><span class="macro__dot macro__dot--f"></span><strong id="mFat">0 g</strong><small>Grasas</small></div>
+                <div class="macro"><span class="macro__dot macro__dot--w"></span><strong id="mWater">0 L</strong><small>Agua</small></div>
+              </div>
+              <div class="macro-bar" aria-hidden="true">
+                <span id="barP"></span><span id="barC"></span><span id="barF"></span>
+              </div>
+              <p class="calc__note">Estimación con la fórmula Mifflin-St Jeor. Tu entrenador la ajusta en tu valoración. <a href="#reserva">Agéndala gratis →</a></p>
+            </div>
+          </form>
+
+          <div class="nutri__tips reveal">
+            <img class="nutri__img" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop" alt="Comidas saludables preparadas para la semana" loading="lazy" />
+            <div class="tips">
+              <div class="tip"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></span><div><strong>Proteína en cada comida</strong><p>Huevos, pollo, carne, atún, caraotas o queso blanco. Apunta a 1.6–2 g por kg de peso.</p></div></div>
+              <div class="tip"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg></span><div><strong>Método del plato</strong><p>½ vegetales, ¼ proteína, ¼ carbohidrato (arroz, arepa, papa, plátano).</p></div></div>
+              <div class="tip"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg></span><div><strong>Hidrátate</strong><p>35 ml por kg de peso al día. Un vaso antes de cada comida ayuda a controlar el apetito.</p></div></div>
+              <div class="tip"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg></span><div><strong>Cuidado con lo líquido</strong><p>Refrescos y jugos azucarados suman cientos de calorías sin saciarte.</p></div></div>
+              <div class="tip"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span><div><strong>Duerme 7–8 horas</strong><p>Dormir poco aumenta el hambre y frena tu recuperación muscular.</p></div></div>
+              <div class="tip"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span><div><strong>Prepara tu semana</strong><p>Cocinar domingo y miércoles evita las comidas improvisadas.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROGRESO SEMANAL ============ -->
+    <section class="section" id="progreso">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Mi progreso semanal</span>
+          <h2 class="section__title">Lo que se mide, <span class="text-gradient">se mejora</span></h2>
+          <p class="section__sub">Cada día toma menos de un minuto: elige el día, marca lo que hiciste y listo. Se guarda solo en tu teléfono.</p>
+        </header>
+
+        <div class="tracker card reveal">
+          <div class="wk-top">
+            <div class="tracker__week">
+              <button class="icon-btn" id="prevWeek" aria-label="Semana anterior">‹</button>
+              <div>
+                <small>Semana</small>
+                <strong id="weekLabel">—</strong>
+              </div>
+              <button class="icon-btn" id="nextWeek" aria-label="Semana siguiente">›</button>
+            </div>
+            <span class="save-note" id="saveNote" aria-live="polite">Guardado</span>
+          </div>
+
+          <ol class="wk-steps">
+            <li><b>1</b> Elige el día</li>
+            <li><b>2</b> Marca lo que hiciste</li>
+          </ol>
+
+          <div class="wk-days" id="wkDays" role="tablist" aria-label="Días de la semana"><!-- generado por tracker.js --></div>
+
+          <div class="wk-day" id="dayPanel"><!-- generado por tracker.js --></div>
+
+          <h3 class="wk-subtitle">Tu semana</h3>
+          <div class="wk-stats">
+            <div class="wk-stat">
+              <span class="wk-stat__label">Entrenos</span>
+              <strong id="sWorkout">0/4</strong>
+              <i class="wk-bar"><b id="bWorkout"></b></i>
+            </div>
+            <div class="wk-stat">
+              <span class="wk-stat__label">Comida sana</span>
+              <strong id="sNutrition">0/7</strong>
+              <i class="wk-bar"><b id="bNutrition"></b></i>
+            </div>
+            <div class="wk-stat">
+              <span class="wk-stat__label">Agua</span>
+              <strong id="sWater">0/7</strong>
+              <i class="wk-bar"><b id="bWater"></b></i>
+            </div>
+            <div class="wk-stat">
+              <span class="wk-stat__label">Sueño</span>
+              <strong id="sSleep">0/7</strong>
+              <i class="wk-bar"><b id="bSleep"></b></i>
+            </div>
+          </div>
+          <p class="tracker__msg" id="trackerMsg">Toca un día y marca lo que hiciste. ¡Así de fácil!</p>
+
+          <button class="btn btn--primary wk-share" id="shareCoach">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Enviar resumen a mi entrenador
+          </button>
+
+          <details class="wk-more">
+            <summary>Más opciones <small>(metas, peso, exportar)</small></summary>
+            <div class="wk-more__body">
+              <div class="wk-more__grid">
+                <label class="field field--inline">
+                  <span>Meta de entrenos por semana</span>
+                  <input type="number" id="goalWorkouts" min="1" max="7" value="4" inputmode="numeric" />
+                </label>
+                <label class="field field--inline">
+                  <span>Meta de vasos de agua por día</span>
+                  <input type="number" id="goalWater" min="1" max="20" value="8" inputmode="numeric" />
+                </label>
+                <label class="field field--inline">
+                  <span>Peso al inicio de la semana (kg)</span>
+                  <input type="number" step="0.1" id="weightStart" placeholder="Ej: 72.5" inputmode="decimal" />
+                </label>
+                <label class="field field--inline">
+                  <span>Peso al final de la semana (kg)</span>
+                  <input type="number" step="0.1" id="weightEnd" placeholder="Ej: 71.8" inputmode="decimal" />
+                </label>
+              </div>
+              <div class="weight-delta" id="weightDelta">—</div>
+              <div class="tracker__actions">
+                <button class="btn btn--ghost btn--sm" id="exportData">Descargar mis datos</button>
+                <button class="btn btn--ghost btn--sm btn--danger" id="resetWeek">Borrar esta semana</button>
+              </div>
+            </div>
+          </details>
+
+          <div class="app-soon">
+            <span><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg></span>
+            <p><strong>Muy pronto: App Ferreira Fitness.</strong> Tu progreso se sincronizará en tiempo real con tu entrenador y el gimnasio. Lo que registres aquí podrás llevarlo a la app.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ENTRENADORES ============ -->
+    <section class="section section--alt" id="entrenadores">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Nuestro equipo</span>
+          <h2 class="section__title">Entrenadores que <span class="text-gradient">te ayudan y acesoran</span>, no solo te entrenan</h2>
+        </header>
+
+        <div class="trainers">
+          <article class="trainer reveal">
+            <div class="trainer__img"><img src="assets/img/entrenador1.jpg" alt="Entrenador Carlos Ferreira, especialista en fuerza" loading="lazy" /></div>
+            <div class="trainer__body">
+              <h3>Carlos Ferreira</h3>
+              <span class="trainer__role">Entrenador Principal · Fuerza & Hipertrofia</span>
+              <p>Fundador del gym. 10 años transformando cuerpos con entrenamiento de fuerza basado en evidencia.</p>
+              <ul class="chips"><li>Powerlifting</li><li>Hipertrofia</li><li>Técnica</li></ul>
+            </div>
+          </article>
+          <article class="trainer reveal">
+            <div class="trainer__img"><img src="assets/img/entrenador2.jpg" alt="Entrenadora Andrea Rojas, especialista en funcional y pérdida de grasa" loading="lazy" /></div>
+            <div class="trainer__body">
+              <h3>Andrea Rojas</h3>
+              <span class="trainer__role">Entrenadora · Funcional & Pérdida de grasa</span>
+              <p>Especialista en HIIT y entrenamiento femenino. Lidera las clases grupales más llenas de Colón.</p>
+              <ul class="chips"><li>HIIT</li><li>Glúteos</li><li>Kettlebell</li></ul>
+            </div>
+          </article>
+          <article class="trainer reveal">
+            <div class="trainer__img"><img src="assets/img/entrenador3.jpg" alt="Entrenador Luis Ramírez, nutrición deportiva y seguimiento" loading="lazy" /></div>
+            <div class="trainer__body">
+              <h3>Luis Ramírez</h3>
+              <span class="trainer__role">Nutrición deportiva & Seguimiento</span>
+              <p>Diseña tu guía nutricional y analiza tu progreso semanal para ajustar tu plan con datos.</p>
+              <ul class="chips"><li>Nutrición</li><li>Recomposición</li><li>Hábitos</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUPLEMENTOS ============ -->
+    <section class="section" id="suplementos">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Tienda Fitness</span>
+          <h2 class="section__title">Nuestros <span class="text-gradient">Suplementos</span></h2>
+          <p class="section__sub">Potencia tus resultados con productos de calidad directamente en nuestras instalaciones.</p>
+        </header>
+
+        <div class="products reveal">
+          <article class="product">
+            <div class="product__img">
+              <img src="assets/img/supp_protein.jpg" alt="Proteína" loading="lazy" />
+            </div>
+            <div class="product__body">
+              <h3>Proteína</h3>
+              <p>Ideal para la recuperación y el crecimiento muscular después de cada entrenamiento.</p>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product__img">
+              <img src="assets/img/supp_creatine.jpg" alt="Creatina" loading="lazy" />
+            </div>
+            <div class="product__body">
+              <h3>Creatina</h3>
+              <p>Aumenta tu fuerza, resistencia y rendimiento en los ejercicios más intensos.</p>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product__img">
+              <img src="assets/img/supp_glutamine.jpg" alt="Glutamina" loading="lazy" />
+            </div>
+            <div class="product__body">
+              <h3>Glutamina</h3>
+              <p>Protege tu sistema inmunológico y evita la degradación muscular tras el esfuerzo.</p>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product__img">
+              <img src="assets/img/supp_energy.jpg" alt="Bebidas Energéticas" loading="lazy" />
+            </div>
+            <div class="product__body">
+              <h3>Bebidas Energéticas</h3>
+              <p>El impulso y energía extra que necesitas para darlo todo en cada sesión.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIOS ============ -->
+    <section class="section section--alt" id="testimonios">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Testimonios</span>
+          <h2 class="section__title">Lo que dice <span class="text-gradient">nuestra comunidad</span></h2>
+          <div class="rating"><span class="stars">★★★★★</span> <strong>4.9/5</strong> · +200 reseñas</div>
+        </header>
+
+        <div class="slider reveal" id="testimonials">
+          <div class="slider__track">
+            <blockquote class="testi">
+              <div class="stars">★★★★★</div>
+              <p>“El ambiente es increíble. Llegué sin saber nada y desde el primer día me sentí parte del grupo. Ya llevo 5 meses sin faltar.”</p>
+              <footer><span class="avatar">DP</span><div><strong>Daniela P.</strong><small>Estudiante, 19 años</small></div></footer>
+            </blockquote>
+            <blockquote class="testi">
+              <div class="stars">★★★★★</div>
+              <p>“Trabajo turnos rotativos y el horario de 5 am a 10 pm me salvó. Bajé 9 kg y mi tensión se normalizó.”</p>
+              <footer><span class="avatar">RA</span><div><strong>Ricardo A.</strong><small>Comerciante, 41 años</small></div></footer>
+            </blockquote>
+            <blockquote class="testi">
+              <div class="stars">★★★★★</div>
+              <p>“Los mejores equipos de Colón, siempre limpios. Y los entrenadores de verdad te corrigen la técnica.”</p>
+              <footer><span class="avatar">VS</span><div><strong>Valentina S.</strong><small>Enfermera, 33 años</small></div></footer>
+            </blockquote>
+            <blockquote class="testi">
+              <div class="stars">★★★★★</div>
+              <p>“El seguimiento semanal me mantiene enfocado. Ver mis anillos de progreso completos se volvió adictivo.”</p>
+              <footer><span class="avatar">AM</span><div><strong>Andrés M.</strong><small>Ingeniero, 29 años</small></div></footer>
+            </blockquote>
+            <blockquote class="testi">
+              <div class="stars">★★★★★</div>
+              <p>“Mi hijo de 16 y yo entrenamos juntos. Le enseñaron con mucha responsabilidad y ahora es su hábito favorito.”</p>
+              <footer><span class="avatar">LC</span><div><strong>Luisa C.</strong><small>Docente, 44 años</small></div></footer>
+            </blockquote>
+          </div>
+          <div class="slider__controls">
+            <button class="icon-btn" data-dir="-1" aria-label="Testimonio anterior">‹</button>
+            <div class="slider__dots" id="testiDots"></div>
+            <button class="icon-btn" data-dir="1" aria-label="Testimonio siguiente">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2 class="section__title">Resolvemos tus <span class="text-gradient">dudas</span></h2>
+        </header>
+
+        <div class="faq">
+          <details class="faq__item reveal" open>
+            <summary>¿Nunca he ido a un gimnasio, es para mí?</summary>
+            <p>¡Totalmente! La mayoría de nuestros socios empezó desde cero. En tu valoración gratuita te enseñamos a usar las máquinas y diseñamos una rutina a tu nivel.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>¿Desde qué edad se puede entrenar?</summary>
+            <p>Desde los 15 años. Los menores de 18 necesitan autorización de su representante y siguen un programa supervisado enfocado en técnica y salud.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>¿Cuánto tiempo tardaré en ver resultados?</summary>
+            <p>Con constancia (3–4 entrenos/semana) y siguiendo la guía de nutrición, la mayoría nota cambios en energía a las 2 semanas y cambios visibles entre las 6 y 8 semanas.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>¿Hay contrato de permanencia?</summary>
+            <p>No. Sin contratos forzosos. Entrenas con nosotros porque quieres, no porque un papel te obligue.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>¿Qué métodos de pago aceptan?</summary>
+            <p>Efectivo en divisas, bolívares a tasa BCV, Pago Móvil, transferencia y Zelle.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>¿Cómo funciona el progreso semanal?</summary>
+            <p>Registras cada día si entrenaste, si cumpliste tu alimentación, cuánta agua tomaste y cuánto dormiste. Puedes enviarle el resumen a tu entrenador por WhatsApp. Muy pronto estará en nuestra app sincronizada con el gym.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESERVA ============ -->
+    <section class="section cta-section" id="reserva">
+      <div class="container split split--form">
+        <div class="split__body reveal">
+          <span class="eyebrow">Reserva tu consulta</span>
+          <h2 class="section__title">Tu primera valoración <span class="text-gradient">es GRATIS</span></h2>
+          <p class="section__sub">En 45 minutos medimos tu composición corporal, definimos tu meta y te entregamos un plan inicial de entrenamiento y nutrición. Sin compromiso.</p>
+          <ul class="checklist">
+            <li>Evaluación física y de movilidad</li>
+            <li>Recomendación de plan según tu objetivo</li>
+            <li>Clase de prueba incluida</li>
+          </ul>
+          <div class="urgency">🔥 Solo <strong id="spots">7</strong> cupos de valoración gratuita disponibles esta semana</div>
+        </div>
+
+        <form class="card booking reveal" id="bookingForm" novalidate>
+          <h3 class="card__title">Agenda en 1 minuto</h3>
+          <label class="field">
+            <span>Nombre completo *</span>
+            <input type="text" name="name" autocomplete="name" placeholder="Tu nombre" required minlength="3" />
+            <small class="error"></small>
+          </label>
+          <div class="grid-2">
+            <label class="field">
+              <span>WhatsApp *</span>
+              <input type="tel" name="phone" autocomplete="tel" placeholder="0414-1234567" required pattern="^[0-9+\-\s]{10,15}$" />
+              <small class="error"></small>
+            </label>
+            <label class="field">
+              <span>Edad *</span>
+              <input type="number" name="age" min="15" max="80" placeholder="25" required />
+              <small class="error"></small>
+            </label>
+          </div>
+          <label class="field">
+            <span>Tu objetivo principal *</span>
+            <select name="goal" required>
+              <option value="">Selecciona…</option>
+              <option>Perder peso</option>
+              <option>Ganar fuerza y músculo</option>
+              <option>Crear el hábito de entrenar</option>
+              <option>Mejorar salud y energía</option>
+            </select>
+            <small class="error"></small>
+          </label>
+          <div class="grid-2">
+            <label class="field">
+              <span>Fecha preferida *</span>
+              <input type="date" name="date" required />
+              <small class="error"></small>
+            </label>
+            <label class="field">
+              <span>Horario</span>
+              <select name="time">
+                <option>Mañana (5–9 am)</option>
+                <option>Mediodía (11 am–2 pm)</option>
+                <option selected>Tarde (4–7 pm)</option>
+                <option>Noche (7–10 pm)</option>
+              </select>
+            </label>
+          </div>
+          <label class="check">
+            <input type="checkbox" name="consent" required />
+            <span>Acepto ser contactado por WhatsApp para confirmar mi cita.</span>
+          </label>
+          <small class="error" id="consentError"></small>
+          <button type="submit" class="btn btn--primary btn--block btn--lg">Reservar mi valoración GRATIS</button>
+          <p class="form__secure">🔒 Tus datos están seguros. Cero spam.</p>
+
+          <div class="booking__success" id="bookingSuccess" hidden>
+            <div class="success__icon">✅</div>
+            <h3>¡Reserva recibida!</h3>
+            <p>Te abrimos WhatsApp para confirmar tu cita con el equipo. Si no se abrió, <a href="#" id="waFallback" target="_blank" rel="noopener">toca aquí</a>.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ UBICACIÓN ============ -->
+    <section class="section section--alt" id="ubicacion">
+      <div class="container split">
+        <div class="split__body reveal">
+          <span class="eyebrow">Visítanos</span>
+          <h2 class="section__title">En el corazón de <span class="text-gradient">San Juan de Colón</span></h2>
+          <ul class="info-list">
+            <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span><div><strong>Dirección</strong><p>Av. principal, San Juan de Colón, Táchira, Venezuela</p></div></li>
+            <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span><div><strong>Horario</strong><p>Lun–Vie 5:00 am – 10:00 pm<br />Sáb 7:00 am – 6:00 pm · Dom 8:00 am – 1:00 pm</p></div></li>
+            <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span><div><strong>WhatsApp</strong><p><a href="#" class="js-wa">+58 414-000-0000</a></p></div></li>
+            <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></span><div><strong>Instagram</strong><p><a href="https://instagram.com/ferreirafitnessgym" target="_blank" rel="noopener">@ferreirafitnessgym</a></p></div></li>
+          </ul>
+        </div>
+        <div class="map reveal">
+          <iframe title="Mapa de Ferreira Fitness GYM en San Juan de Colón" src="https://www.google.com/maps?q=San+Juan+de+Col%C3%B3n,+T%C3%A1chira,+Venezuela&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="logo logo--footer">
+        <img src="assets/img/logo.jpg" alt="Ferreira Fitness GYM" />
+        <span class="logo__text">FERREIRA<strong>FITNESS GYM</strong></span>
+      </a>
+      <p>Fuerza, disciplina y comunidad en San Juan de Colón.</p>
+      <nav class="footer__links">
+        <a href="#suplementos">Suplementos</a><a href="#faq">FAQ</a><a href="#reserva">Reservar</a>
+        <a href="https://instagram.com/ferreirafitnessgym" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <small>© <span id="year"></span> Ferreira Fitness GYM. Todos los derechos reservados.</small>
+    </div>
+    <div class="footer__brand" aria-hidden="true">FERREIRA FITNESS</div>
+  </footer>
+
+  <!-- CTA flotantes -->
+  <a href="https://instagram.com/ferreirafitnessgym" class="ig-float" aria-label="Síguenos en Instagram" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+    </svg>
+  </a>
+  <a href="#" class="wa-float js-wa" aria-label="Escríbenos por WhatsApp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.3 1.1 1.2-4.2-.3-.4c-1-1.6-1.5-3.5-1.5-5.4C5.4 9.9 10.2 5.2 16 5.2s10.6 4.7 10.6 10.4S21.8 26.1 16 26.1zm5.8-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.7-.4z"/></svg>
+  </a>
+  <div class="mobile-cta" id="mobileCta">
+    <a href="#reserva" class="btn btn--primary btn--sm">Valoración GRATIS</a>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/tracker.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
