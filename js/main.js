@@ -22,6 +22,28 @@
   const $$ = (s, c = document) => [...c.querySelectorAll(s)];
   const waLink = (text = "") => `https://wa.me/${CFG.whatsapp || ""}${text ? "?text=" + encodeURIComponent(text) : ""}`;
 
+  /* ---------- Modal Global ---------- */
+  window.FFModal = (function() {
+    const m = document.getElementById("ffModal");
+    if (!m) return { alert: () => {}, confirm: async () => true };
+    const title = m.querySelector("#modalTitle"), text = m.querySelector("#modalText"), icon = m.querySelector("#modalIcon");
+    const btnCancel = m.querySelector("#modalCancel"), btnConfirm = m.querySelector("#modalConfirm");
+    let currentResolve = null;
+    const close = (val) => { m.setAttribute("aria-hidden", "true"); if (currentResolve) { currentResolve(val); currentResolve = null; } };
+    m.querySelectorAll("[data-close]").forEach(el => el.addEventListener("click", () => close(false)));
+    btnConfirm.addEventListener("click", () => close(true));
+    const show = ({ title: t, text: txt, type = "info", confirmText = "Aceptar", cancelText = "Cancelar", showCancel = false }) => {
+      title.textContent = t; text.textContent = txt;
+      btnConfirm.textContent = confirmText; btnCancel.textContent = cancelText;
+      btnCancel.style.display = showCancel ? "inline-flex" : "none";
+      icon.className = "modal__icon " + (type === "warning" ? "is-warning" : type === "error" ? "is-error" : "");
+      icon.innerHTML = type === "warning" ? "⚠️" : type === "error" ? "❌" : "💡";
+      m.removeAttribute("aria-hidden");
+      return new Promise(res => { currentResolve = res; });
+    };
+    return { alert: (opts) => show({ ...opts, showCancel: false }), confirm: (opts) => show({ ...opts, showCancel: true }) };
+  })();
+
   /* ---------- Header + CTA móvil al hacer scroll ---------- */
   const header = $("#header");
   const mobileCta = $("#mobileCta");
@@ -83,13 +105,46 @@
 
   /* ---------- Calculadora de calorías y macros ---------- */
   const calcForm = $("#calcForm");
+  
+  $$("input, select", calcForm).forEach(el => {
+    el.addEventListener("input", () => {
+      const field = el.closest(".field");
+      if (field && field.classList.contains("is-invalid")) {
+        const ok = el.checkValidity();
+        field.classList.toggle("is-invalid", !ok);
+        const err = $(".error", field);
+        if (err) err.textContent = ok ? "" : "Valor inválido.";
+      }
+    });
+  });
+
   calcForm.addEventListener("submit", (e) => {
     e.preventDefault();
+    const fields = $$("input, select", calcForm);
+    let isValid = true;
+    fields.forEach(el => {
+      const field = el.closest(".field");
+      if (!field) return;
+      const ok = el.checkValidity();
+      field.classList.toggle("is-invalid", !ok);
+      const err = $(".error", field);
+      if (err) err.textContent = ok ? "" : "Valor inválido.";
+      if (!ok) isValid = false;
+    });
+
+    if (!isValid) {
+      window.FFModal.alert({
+        title: "Datos incorrectos",
+        text: "Por favor revisa los campos marcados en rojo. Asegúrate de que la edad (15-75), peso y estatura sean correctos.",
+        type: "error"
+      });
+      return;
+    }
+
     const fd = new FormData(calcForm);
     const sex = fd.get("sex");
     const age = +fd.get("age"), weight = +fd.get("weight"), height = +fd.get("height");
     const activity = +fd.get("activity"), goal = fd.get("goal");
-    if (!age || !weight || !height) return;
 
     // Mifflin-St Jeor
     const bmr = 10 * weight + 6.25 * height - 5 * age + (sex === "m" ? 5 : -161);

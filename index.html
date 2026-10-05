@@ -281,15 +281,15 @@
               </label>
               <label class="field">
                 <span>Edad</span>
-                <input type="number" name="age" min="15" max="80" value="25" required />
+                <input type="number" name="age" min="15" max="75" value="25" required /><span class="error"></span>
               </label>
               <label class="field">
                 <span>Peso (kg)</span>
-                <input type="number" name="weight" min="35" max="250" step="0.1" value="70" required />
+                <input type="number" name="weight" min="40" max="180" step="0.1" value="70" required /><span class="error"></span>
               </label>
               <label class="field">
                 <span>Estatura (cm)</span>
-                <input type="number" name="height" min="130" max="220" value="170" required />
+                <input type="number" name="height" min="140" max="220" value="170" required /><span class="error"></span>
               </label>
               <label class="field">
                 <span>Actividad</span>
@@ -744,6 +744,23 @@
   </a>
   <div class="mobile-cta" id="mobileCta">
     <a href="#reserva" class="btn btn--primary btn--sm">Valoración GRATIS</a>
+  </div>
+
+  <!-- ============ MODAL GLOBAL ============ -->
+  <div class="modal" id="ffModal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-close></div>
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="icon-btn modal__close" aria-label="Cerrar" data-close>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal__icon" id="modalIcon"></div>
+      <h3 class="modal__title" id="modalTitle"></h3>
+      <p class="modal__text" id="modalText"></p>
+      <div class="modal__actions">
+        <button class="btn btn--ghost" id="modalCancel" data-close>Cancelar</button>
+        <button class="btn btn--primary" id="modalConfirm">Aceptar</button>
+      </div>
+    </div>
   </div>
 
   <script src="js/config.js"></script>

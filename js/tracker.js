@@ -343,8 +343,15 @@
     $("#prevWeek").addEventListener("click", () => goToWeek(-7));
     $("#nextWeek").addEventListener("click", () => goToWeek(7));
 
-    $("#resetWeek").addEventListener("click", () => {
-      if (!confirm("¿Seguro que quieres borrar los datos de esta semana?")) return;
+    $("#resetWeek").addEventListener("click", async () => {
+      const ok = window.FFModal ? await window.FFModal.confirm({
+        title: "Borrar semana",
+        text: "¿Seguro que quieres borrar todos los datos registrados en esta semana? Esta acción no se puede deshacer.",
+        type: "warning",
+        confirmText: "Sí, borrar",
+        cancelText: "Mantener"
+      }) : confirm("¿Seguro que quieres borrar los datos de esta semana?");
+      if (!ok) return;
       data.weeks[toKey(currentMonday)] = emptyWeek(toKey(currentMonday));
       persist(); render();
     });
