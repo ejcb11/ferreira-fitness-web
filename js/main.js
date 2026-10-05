@@ -44,6 +44,28 @@
     return { alert: (opts) => show({ ...opts, showCancel: false }), confirm: (opts) => show({ ...opts, showCancel: true }) };
   })();
 
+  /* ---------- Restricción global de caracteres ---------- */
+  document.addEventListener("input", (e) => {
+    const el = e.target;
+    // Nombres: solo letras y espacios
+    if (el.name === "name") {
+      el.value = el.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, "");
+    }
+    // Teléfonos: solo números, +, - y espacios
+    if (el.type === "tel") {
+      el.value = el.value.replace(/[^0-9+\-\s]/g, "");
+    }
+  });
+  document.addEventListener("keydown", (e) => {
+    const el = e.target;
+    // Evitar decimales, signos y letra 'e' en campos numéricos que deben ser enteros
+    if (el.type === "number" && !["weight", "weightStart", "weightEnd"].includes(el.name || el.id)) {
+      if (["e", "E", "+", "-", ".", ","].includes(e.key)) {
+        e.preventDefault();
+      }
+    }
+  });
+
   /* ---------- Header + CTA móvil al hacer scroll ---------- */
   const header = $("#header");
   const mobileCta = $("#mobileCta");
@@ -238,9 +260,9 @@
   dateInput.value = iso(tomorrow);
 
   const messages = {
-    name: "Escribe tu nombre (mínimo 3 letras).",
+    name: "Escribe tu nombre completo (solo letras, mínimo 3).",
     phone: "Ingresa un número de WhatsApp válido.",
-    age: "La edad debe estar entre 15 y 80 años.",
+    age: "La edad debe estar entre 15 y 75 años.",
     goal: "Selecciona tu objetivo.",
     date: "Elige una fecha a partir de hoy."
   };
@@ -265,7 +287,15 @@
     const consent = form.elements.consent;
     $("#consentError").textContent = consent.checked ? "" : "Necesitamos tu autorización para contactarte.";
     if (!consent.checked) valid = false;
-    if (!valid) { $(".is-invalid input, .is-invalid select", form)?.focus(); return; }
+    if (!valid) { 
+      window.FFModal.alert({
+        title: "Datos incorrectos",
+        text: "Por favor revisa los campos en rojo para poder agendar tu cita.",
+        type: "error"
+      });
+      $(".is-invalid input, .is-invalid select", form)?.focus(); 
+      return; 
+    }
 
     const d = Object.fromEntries(new FormData(form));
     const lead = { ...d, createdAt: new Date().toISOString(), source: document.referrer || "directo", utm: location.search };
